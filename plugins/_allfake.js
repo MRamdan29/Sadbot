@@ -12,7 +12,7 @@ handler.all = async function (m) {
         const u = await conn.clockString(_uptime)
         global.run = '𝙍𝙪𝙣𝙩𝙞𝙢𝙚' + ' ' + u
         global.ucapan = ucapan()
-        global.col = 'https://telegra.ph/file/e44b8c524d9b081d3cab0.jpg'
+        global.col = 'https://telegra.ph/file/e78d7608a8d3a1d3d8200.jpg'
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 		global.users = db.data.users[m.sender]
 		global.chats = db.data.chats[m.chat]
@@ -68,7 +68,7 @@ handler.all = async function (m) {
 	 { fromMe: false,
 	 participant: `0@s.whatsapp.net`, ...(m.chat  ? 
 	 { remoteJid: "status@broadcast" } : {}) },
-	 message: { "liveLocationMessage": { "caption":"by : The.sad.boy01","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
+	 message: { "liveLocationMessage": { "caption":"by : Ramdan.Id","h": `${wm}`, 'jpegThumbnail': fs.readFileSync('./src/logo.jpg')}}
 	}
         
             const ftoko = {
@@ -172,4 +172,3 @@ function clockString(ms) {
     let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
     return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
   }
-
